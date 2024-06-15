@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Linked list</title>
+</head>
+<script>
+    user = '<%= name %>'
+    function get(p) {
+        r = "/get?url=" + p +"&name="+user
+       
+        window.open(r, "_self");
+             
+        
+    }
+    function get1(p) {
+        r = "/ql1?url=" + p +"&name="+user
+       
+        window.open(r, "_self");
+             
+        
+    }
+</script>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="logo">
+                <img src="rvlogo.png" alt="logo">
+                <div id="logotext">RV college of engineering</div>
+
+            </div>
+            <div id="heading">doubly linked list</div>
+            <a href="error.html"><button id="logout" >Logout</button></a>
+        </div>
+        
+        <div class="content">
+            <div id="explore">conceptual</div>
+            <div id="boxes">
+                
+                <div class="boxes" id="box2">
+                    <div class="headofbox">Quizes</div>
+                    <div class="boxesitems" onclick="get1('q3l1')">Level </div>
+                    <div class="boxesitems" onclick="get1('q3l2')">Level2</div>
+                    <div class="boxesitems" onclick="get1('q3l3')">Level3</div>
+                   
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>

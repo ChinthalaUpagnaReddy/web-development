@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 Quiz</title>
+    <link rel="stylesheet" href="quiz_styles.css">
+    <script>
+        // Assuming level1Questions2 is defined in your server-side code and injected into this script
+        var level1Questions2 = `<%-JSON.stringify(data)%>`;
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Level 1: Basic Concepts Quiz</h1>
+    </header>
+
+    <div id="questionContainer1">
+        <div id="questionContainer" class="quiz-level"></div>
+    
+    <div id="navigationButtons">
+        <button id="prevButton" onclick="showPreviousQuestion()">Previous</button>
+        <button id="nextButton" onclick="showNextQuestion()">Next</button>
+        <button id="submitButton" onclick="checkAnswers()" style="display: none; background-color: #f39c12;">Submit Answers</button>
+    </div>
+
+
+    <div id="quizResults"></div>
+</div>
+    <footer>
+        <p>&copy; 2024 Linked List Explorer</p>
+    </footer>
+
+    <!-- Include your JavaScript file -->
+    <script src="quizjs.js"></script>
+</body>
+
+</html>

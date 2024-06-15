@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <title>Linked list</title>
+</head>
+<script>
+    user = '<%= name %>'
+    function get(p) {
+        r = "/get?url=" + p +"&name="+user
+       
+        window.open(r, "_self");
+             
+        
+    }
+    function get1(p) {
+        r = "/ql1?url=" + p +"&name="+user
+       
+        window.open(r, "_self");
+             
+        
+    }
+</script>
+<body>
+    <div class="container">
+        <div id="header">
+            <div id="logo">
+                <img src="rvlogo.png" alt="logo">
+                <div id="logotext">RV college of engineering</div>
+
+            </div>
+            <div id="heading">Linked list module</div>
+            <a href="error.html"><button id="logout" >Logout</button></a>
+        </div>
+        <div id="name">
+            <div class="nameitems"> Welcome <%= name %>
+            </div>
+            
+        </div>
+        <div class="content">
+            <div id="explore">Explore resources</div>
+            <div id="boxes">
+                <div class="boxes" id="box1">
+                 <div class="headofbox">Animations</div>
+                <div class="boxesitems" onclick="get('linkedlist')">Singly linked list</div>
+                 <div class="boxesitems" onclick="get('circularsll')">Circular linked list</div>
+                <div class="boxesitems" onclick="get('dlinkedlist')">Doubly linked list</div>
+                <div class="boxesitems"onclick="get()">Doubly circular linked list</div>
+                 <div class="boxesitems">Header linked list</div>
+                </div>
+                <div class="boxes" id="box2">
+                    <div class="headofbox">Quizes</div>
+                    <div class="boxesitems"> <a href="menu.html">Quiz on SLL</a></div>
+                    <div class="boxesitems" ><a href="menu2.html">Quiz on CLL</a></div>
+                    <div class="boxesitems"><a href="menu3.html">Questions on DLL</a></div>
+                    <div class="boxesitems"><a href="menu4.html">Quiz on DCLL</a></div>
+                    <div class="boxesitems" ><a href="menu5.html">Quiz on Header list</a></div>
+                </div>
+            </div>
+            <div id="references">
+             <div class="books"><a href="#">read concepts </a></div>
+             <div class="pdfs">references : <a href="book1.pdf" target="_blank" >Arun m tabenun book</a><a href="book2.pdf" target="_blank">Data structure using c</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+/* Quiz-specific styles */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.quiz-level {
+    width: 100%; /* Adjust the width as needed */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#questionContainer1 {
+    width: 70%; /* Adjust the width as needed */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1594c6e6;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question-container {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f9fffe;
+    
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px 1px rgba(141, 141, 141, 0.766);
+}
+
+.option-button {
+    background-color: #c0392b; /* Dark green */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.optionsv>button{
+    width: 300px;
+    border-radius: 400px;
+    font-size: 16px;
+    height: 60px;
+    text-align: center;
+}
+.questiont{
+    width: 100%;
+    height: 80px;
+    text-align: center;
+    padding: 15px;
+    font-size: 21px;
+
+    background-color: #16a085;
+}
+.option-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.option-button.selected {
+    background-color: #007bff; /* Dark blue for selected option */
+}
+#navigationButtons>button{
+    height: 42px;
+    width: 140px;
+    background-color: #2c3f50;
+    color: #ddd;
+    border-radius: 100px;
+
+}
+#quizResults {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #000e1d; /* Dark blue for correct answers */
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
